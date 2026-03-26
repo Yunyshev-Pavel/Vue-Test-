@@ -21,7 +21,7 @@
   <div class="meter">
     <div class="meter__measure">
       <img
-        src="@/assets/images/measure_main.png"
+        src="/src/assets/images/measure_main.png"
         loading="lazy"
         alt="Силомер"
         class="measure__image"
@@ -34,14 +34,14 @@
         />
         <div class="meter__ruby">
           <img
-            src="@/assets/images/ruby.png"
+            src="/src/assets/images/ruby.png"
             alt="Рубин"
             class="meter__ruby-image"
           />
         </div>
         <div v-if="gameStore.gameState.isWinner" class="meter__glow">
           <img
-            src="@/assets/images/layer_glow.png"
+            src="/src/assets/images/layer_glow.png"
             alt="Свечение"
             class="meter__glow-image"
           />

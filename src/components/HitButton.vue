@@ -43,7 +43,7 @@
       <img
         class="control__hammer"
         :class="hammerClasses"
-        src="@/assets/images/hammer.png"
+        src="/src/assets/images/hammer.png"
         alt="Молот"
       />
     </div>

@@ -45,7 +45,7 @@
 
     <div>
       <img
-        src="@/assets/images/bottom_navigation.png"
+        src="/src/assets/images/bottom_navigation.png"
         alt="навигация"
         class="nav"
       />
@@ -59,7 +59,7 @@
     height: 640px;
 
     margin: 0 auto;
-    background-image: url('@/assets/images/bg_top.png');
+    background-image: url('/src/assets/images/bg_top.png');
     background-size: cover;
 
     position: relative;

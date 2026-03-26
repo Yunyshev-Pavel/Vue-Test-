@@ -84,7 +84,7 @@
   <div class="control__scale">
     <img
       class="control__scale--image"
-      src="@/assets/images/scale.png"
+      src="/src/assets/images/scale.png"
       alt="Шкала силы удара"
     />
     <div class="control__fill">
@@ -92,7 +92,7 @@
     </div>
     <img
       class="control__scale-measure"
-      src="@/assets/images/scale-1.png"
+      src="/src/assets/images/scale-1.png"
       alt="Мера силы удара"
     />
   </div>
