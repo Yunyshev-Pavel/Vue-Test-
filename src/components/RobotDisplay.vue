@@ -5,16 +5,19 @@
 
   const gameStore = useGameStore()
 
-  const robotImage = computed(() =>
-    gameStore.gameState.isHitting
+  const robotImage = computed(() => {
+    if (!gameStore.gameState) return DYNAMIC_IMAGES.ROBOT.DEFAULT
+
+    return gameStore.gameState.isHitting
       ? DYNAMIC_IMAGES.ROBOT.LOOSER
-      : DYNAMIC_IMAGES.ROBOT.DEFAULT,
-  )
+      : DYNAMIC_IMAGES.ROBOT.DEFAULT
+  })
 </script>
 
 <template>
   <div class="control__robot">
     <p>{{ robotImage }}</p>
+    <p>{{ gameStore.gameState }}</p>
     <img
       v-if="gameStore.gameState.isWinner"
       class="control__robot-image"
