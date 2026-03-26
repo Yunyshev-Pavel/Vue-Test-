@@ -14,10 +14,7 @@
 
 <template>
   <div class="control__robot">
-    <img
-      src="/images/robot/robot_1.png"
-      style="width: 200px; border: 2px solid red"
-    />
+    <p>{{ robotImage }}</p>
     <img
       v-if="gameStore.gameState.isWinner"
       class="control__robot-image"
