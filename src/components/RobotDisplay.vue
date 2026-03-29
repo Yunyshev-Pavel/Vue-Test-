@@ -16,8 +16,6 @@
 
 <template>
   <div class="control__robot">
-    <p>{{ robotImage }}</p>
-    <p>{{ gameStore.gameState }}</p>
     <img
       v-if="gameStore.gameState.isWinner"
       class="control__robot-image"
